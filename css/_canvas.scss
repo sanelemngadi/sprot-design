@@ -1,0 +1,37 @@
+#canvas{
+    overflow-y: auto;
+    &:nth-child(1){
+        margin: 205px;
+    }
+
+    div{
+        height: 200px;
+        background-color: silver;
+        border: 1px solid black;
+
+        &.focus{
+            background-color: blue;
+        }
+
+
+        &:hover{
+            border: 1px dashed blue;
+        }
+    }
+}
+
+#canvas{
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 4px;
+        background-color: var(--panels-main-pale);
+      }
+
+    //   &:hover::-webkit-scrollbar-thumb {
+    //   }
+  }

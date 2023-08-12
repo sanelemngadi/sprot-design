@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <ul>
+                <li id="add-tool">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4c4.411 0 8 3.589 8 8s-3.589 8-8 8s-8-3.589-8-8s3.589-8 8-8m0-2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2zm5 9h-4V7h-2v4H7v2h4v4h2v-4h4v-2z"/></svg>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="canvas" id="canvas">
+            <div>
+                <h2>hello word</h2>
+            </div>
+            <!-- <span class="button">
+                hello
+            </span> -->
+        </div>
+        <div class="panels">
+            <div class="panels-heading">
+            </div>
+            <div class="panels-heading">
+                <ul>
+                    <li class="active">Properties</li>
+                    <li>Attributes</li>
+                    <li>Layers</li>
+                </ul>
+            </div>
+            <div class="panels-content">
+                <div class="action-element">
+                    <h2 id="action-element">
+                        Section
+                    </h2>
+                    <span class="icon">
+                        <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.5 1H15" stroke="black"/>
+                            <path d="M0.5 4H15" stroke="black"/>
+                            <path d="M0.5 7H15" stroke="black"/>
+                            </svg>                        
+                    </span>
+                </div>
+                <div class="panels-heading current-state">
+                    <ul>
+                        <li class="active">Normal</li>
+                        <li>hover</li>
+                        <li>focus</li>
+                        <li>pressed</li>
+                        <li>::after</li>
+                        <li>::before</li>
+                    </ul>
+                </div>
+                <div class="property property-encompass box-model">
+                    <div class="property-content">
+                        <div class="property-heading">
+                            <div class="propert_heading-activation">
+                                <input type="checkbox" name="" class="property-toggle" id="boxmodel-box" checked>
+                                <label for="boxmodel-box">Boxeffex</label>
+                            </div>
+                            <div class="fx">
+                                <svg width="16" height="16" viewBox="0 0 14 10"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.639205 8V2.18182H4.24716V2.9375H1.51705V4.71023H3.98864V5.46307H1.51705V8H0.639205ZM5.92898 3.63636L6.89205 5.33523L7.86364 3.63636H8.79261L7.43182 5.81818L8.80398 8H7.875L6.89205 6.36932L5.91193 8H4.98011L6.33807 5.81818L4.99716 3.63636H5.92898Z" />
+                                    <path d="M12 10L10.2679 7L13.7321 7L12 10Z" />
+                                </svg>  
+                            </div>
+                        </div>
+                
+                        <div class="property-body">
+                            <div class="box">
+                                <!-- this is left empy intentional dont remove it -->
+                            </div>
+                            
+                            <div class="property-attributes">
+                                <!-- this is left empy intentional dont remove it -->
+                            </div>
+                            <div class="attribute-values"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property property-encompass appearance">
+                    <div class="property-content">
+                        <div class="property-heading">
+                            <div class="propert_heading-activation">
+                                <input type="checkbox" name="" class="property-toggle" id="boxmodel-appearance">
+                                <label for="boxmodel-appearance">Appearance</label>
+                            </div>
+                        </div>
+                        <div class="property-body">
+                            <div class="property-attributes">
+                                <div class="attribute-values">
+                                    <table>
+                                        <tr>
+                                            <td>X</td>
+                                            <td>Y</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>W</td>
+                                            <td>H</td>
+                                            <td>s</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property property-encompass layout">
+                    <div class="property-content">
+                        <div class="property-heading">
+                            <div class="propert_heading-activation">
+                                <input type="checkbox" name="" class="property-toggle" id="boxmodel-layout">
+                                <label for="boxmodel-layout">Layout</label>
+                            </div>
+                        </div>
+                       <div class="property-body">
+                            <div class="property-attributes">
+                                <div class="attribute-values">
+                                    <table>
+                                        <tr>
+                                            <td>X</td>
+                                            <td>Y</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>W</td>
+                                            <td>H</td>
+                                            <td>s</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+               
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./dist/app/main.js"></script>
+</body>
+</html>
